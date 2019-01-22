@@ -14,12 +14,14 @@
 */
 
 /* Field Set Styles */
+/* Fieldsets are given no border, a width of 60%, and has its margins set */
 fieldset {
     border: none;
     width: 60%;
     margin: 10px 0
 }
 
+/* Legends that are nested in fieldsets are given a background color, a width of 100%, and a margin */
 fieldset legend {
     background: rgb(232, 232, 232);
     width: 100%;
@@ -28,6 +30,7 @@ fieldset legend {
 
 
 /* DIV Styles */
+/* div elements with the class of slider are floated left, has its margins defined, and given a width of 60% */
 div.slider {
     float: left;
     margin: 2px 0;
@@ -37,6 +40,7 @@ div.slider {
 
 
 /* Control Styles */
+/* The label elements are being floated left and have everything to their left cleared in order to float to it, is displayed as a block, given a width of 40% and has its margins defined */
 label {
     float: left;
     clear: left;
@@ -45,21 +49,25 @@ label {
     margin: 2px 0;
 }
 
+/* Input and select elements are having their margins defined */
 input,
 select {
     margin: 2px 0;
 }
 
+/* All inputs with the attribute range are given the width of 60% */
 input[type="range"] {
     width: 60%;
 }
 
+/* All select elements are given 120 pixels of width, displayed as a block element, and is floated left */
 select {
     width: 120px;
     display: block;
     float: left;
 }
 
+/* Changes all inputs with the attribute color. It makes it a block element and floats it left, also gives it a width of 75 pixels */
 input[type="color"] {
     display: block;
     float: left;
@@ -67,6 +75,7 @@ input[type="color"] {
 
 }
 
+/* Defines the structure of the textarea */
 textarea {
     font-size: 1.5em;
     width: 100%;
@@ -75,8 +84,24 @@ textarea {
 }
 
 /* Placeholder Styles */
-textarea[placeholder] {
+/* Three different placeholder styles for different browsers. increases the size of the placeholder, the background color, and changes the text color */
+
+textarea:-ms-input-placeholder {
     font-size: 1.5em;
     background: rgb(255, 255, 191);
     color: rgb(255, 151, 151);
+
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: 1.5em;
+    background: rgb(255, 255, 191);
+    color: rgb(255, 151, 151);
+}
+
+textarea:-moz-placeholder {
+    font-size: 1.5em;
+    background: rgb(255, 255, 191);
+    color: rgb(255, 151, 151);
+
 }

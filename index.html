@@ -73,7 +73,7 @@
     <section>
         <h1>CSS Demo</h1>
         <form id="login">
-
+            <!-- Creates a box to type in and is given place holder text -->
             <textarea name="sampleText" id="sampleBox" placeholder="enter sample text and press the tab key" autofocus
                 tabindex="1" wrap="hard"></textarea>
             <p> select the css style values from the form below and preview the effect on the sample text in the
@@ -84,6 +84,7 @@
                     Fonts
                 </legend>
                 <label for="">Fonts Family</label>
+                <!-- Creates a font family group to select from -->
                 <select name="fontFamily">
                     <optgroup name="generic">
                         <option value=" default">default</option>
@@ -93,6 +94,7 @@
                         <option value="cursive">cursive</option>
                         <option value="fantasy">fantasy</option>
                     </optgroup>
+                    <!-- Gives you a second gruop of font families, separate from the other group -->
                     <optgroup name="specific">
                         <option value="Arial">Arial</option>
                         <option value="‘book Antiqua’">‘book Antiqua’</option>
@@ -116,6 +118,7 @@
                     <option value="normal">normal</option>
                     <option value="bold">bold</option>
                 </select>
+                <!-- For the text decoration, it gives you a list to select from. This includes underlines, etc. -->
                 <label>Text Decoration</label>
                 <select name="textdecoration" id="textdecoration">
                     <option value="none">none</option>
@@ -124,6 +127,7 @@
                     <option value="underline">underline</option>
                 </select>
                 <label>Text Transform</label>
+                <!-- Creates a list to select from that affects the transformation of the text. -->
                 <select name="texttransform" id="texttransform">
                     <option value="none">none</option>
                     <option value="capitalize">capitalize</option>
